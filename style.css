@@ -1,3 +1,86 @@
+:root {
+  /* Width */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+  /* Primary */
+  --very-dark-blue: hsl(243, 87%, 12%);
+  --desaturated-blue: hsl(238, 22%, 44%);
+  /* Accent */
+
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+  /* Neutral */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+  --heading-font: Raleway, Open Sans, Arial;
+  --heading-font-weight-1: 400;
+  --heading-font-weight-2: 700;
+  --body-font: Open Sans, Arial;
+  --body-font-weight: 400;
+}
+
+/* Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body, html {
+    margin: 0;
+}
+
+/* General styles */
+
 body {
-    background-color: orange;
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight-2);
+}
+
+.secondary {
+    background-color: var(--desaturated-blue);
+}
+
+/* Header Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+nav .logo {
+    flex-shrink: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+
+
+
+
+/* Footer Styles */
+
+footer {
+    background-color: var(--very-dark-blue);
+}
+
+footer * {
+    color: var(--light-grayish-blue);
 }
