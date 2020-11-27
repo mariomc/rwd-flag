@@ -28,7 +28,7 @@ img {
     max-width: 100%;
 }
 
-body, html {
+body, html, ul {
     margin: 0;
 }
 
@@ -36,15 +36,35 @@ body, html {
 
 body {
     font-family: var(--body-font);
+    font-size: 14px;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: var(--heading-font);
     font-weight: var(--heading-font-weight-2);
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .secondary {
     background-color: var(--desaturated-blue);
+}
+
+.margin-bottom {
+    margin-bottom: 85px;
+}
+
+h1 {
+    font-size: 22px; /* 22~25 */
+    line-height: 1.5em;
+}
+
+h2 {
+    font-size: 19px; /* 19~16 */
+    line-height: 1.5em;
 }
 
 /* Header Styles */
@@ -52,27 +72,60 @@ h1, h2, h3, h4, h5 {
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 50px;
-}
-
-nav .logo {
-    flex-shrink: 0;
+    padding: 22px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    flex-shrink: 0;
 }
 
 nav ul a {
     text-decoration: none;
     color: var(--desaturated-blue);
-    margin-left: 50px;
-    font-size: 24px;
+    margin-left: 25px;
+    font-size: 12px;
 }
 
+main {
+    padding: 0 30px;
+}
 
+section > img {
+    margin-top: 85px;
+}
 
+/* Form Styles */
+input {
+    width: 100%;
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid var(--very-dark-blue);
+}
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    background-color: var(--bright-blue);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.icon-cta {
+    color: var(--moderate-cyan);
+    text-decoration: none;
+    display: inline-flex;
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--moderate-cyan);
+}
+
+.icon-cta img {
+    margin-left: 10px;
+}
 
 
 /* Footer Styles */
