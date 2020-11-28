@@ -39,19 +39,19 @@
 
         <h1>All your files in one secure location, accessible anywhere.</h1>
 
-        <!-- @TODO -->
         <p>
           Fylo stores your most important files in one secure location. Access
           them wherever you need, share and collaborate with friends, family,
           and co-workers.
         </p>
         <form action="">
-          <input type="text" placeholder="Enter your email" />
+          <input type="email" placeholder="Enter your email" />
 
           <button>Get Started</button>
         </form>
       </section>
-      <section>
+      <section class="with-curve">
+        <img class="curve" src="images/bg-curve-mobile.svg" />
         <img
           class="margin-bottom"
           src="images/illustration-2.svg"
@@ -70,18 +70,25 @@
           for live collaboration. No email attachments required!
         </p>
 
-        <a class="icon-cta" href="#">See how Fylo works <img src="images/icon-arrow.svg" /></a>
-
-        <blockquote>
-          Fylo has improved our team productivity by an order of magnitude.
-          Since making the switch our team has become a well-oiled collaboration
-          machine.
-        </blockquote>
-        <div>
-          <img src="images/avatar-testimonial.jpg" alt="Kyle Burton" />
-          <h3>Kyle Burton</h3>
-          <h4>Founder & CEO, Huddle</h4>
+        <div class="flex">
+          <a class="icon-cta" href="#"
+            >See how Fylo works <img src="images/icon-arrow.svg"
+          /></a>
         </div>
+        <blockquote>
+          <p class="quote">
+            Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.
+          </p>
+          <div class="author">
+            <img src="images/avatar-testimonial.jpg" alt="Kyle Burton" />
+            <div class="author-info">
+              <h3>Kyle Burton</h3>
+              <h4>Founder & CEO, Huddle</h4>
+            </div>
+          </div>
+        </blockquote>
       </section>
       <section class="secondary">
         <h2>Get early access today</h2>
@@ -91,9 +98,11 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
-        <input type="textfield" placeholder="mail@example.com" />
+        <form>
+          <input type="textfield" placeholder="mail@example.com" />
 
-        <button>Get Started For Free</button>
+          <button>Get Started For Free</button>
+        </form>
       </section>
     </main>
     <footer>

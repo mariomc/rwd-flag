@@ -51,6 +51,15 @@ h1, h2, h3, h4, h5 {
 
 .secondary {
     background-color: var(--desaturated-blue);
+    overflow: hidden;
+    padding-top: 56px;
+    padding-bottom: 66px;
+    color: white;
+    text-align: center;
+}
+
+.secondary p {
+    font-size: 22px;
 }
 
 .margin-bottom {
@@ -67,6 +76,12 @@ h2 {
     line-height: 1.5em;
 }
 
+.solid-light-blue {
+    background-color: var(--light-grayish-blue);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 /* Header Styles */
 
 nav {
@@ -79,6 +94,12 @@ nav ul {
     list-style-type: none;
     display: flex;
     flex-shrink: 0;
+    padding: 0;
+}
+
+nav .logo {
+    width: 85px;
+    flex-shrink: 0;
 }
 
 nav ul a {
@@ -88,8 +109,9 @@ nav ul a {
     font-size: 12px;
 }
 
-main {
-    padding: 0 30px;
+section, footer {
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 section > img {
@@ -98,7 +120,7 @@ section > img {
 
 /* Form Styles */
 input {
-    width: 100%;
+    width: 80%;
     padding: 15px 35px;
     border-radius: 5px;
     border: none;
@@ -107,7 +129,7 @@ input {
 
 button {
     margin-top: 15px;
-    width: 100%;
+    width: 80%;
     height: 40px;
     background-color: var(--bright-blue);
     color: #fff;
@@ -115,16 +137,86 @@ button {
     border: none;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .icon-cta {
     color: var(--moderate-cyan);
     text-decoration: none;
-    display: inline-flex;
+    display: flex;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--moderate-cyan);
+    margin-bottom: 48px;
 }
 
 .icon-cta img {
-    margin-left: 10px;
+    margin-left: .5em;
+}
+
+.with-curve {
+    margin-top: 100px;
+    position: relative;
+    background-color: var(--light-grayish-blue);
+    padding-bottom: 80px;
+}
+
+.curve {
+    margin-top: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 1px;
+    transform: translate(0, -100%);
+}
+
+
+/* Quote Styles */
+
+blockquote {
+    margin: 0 15px;
+    background-color: #fff;
+    padding: 44px 15px 23px 26px;
+    border-radius: 5%;
+    background-image: url('images/icon-quotes.svg');
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+}
+
+.quote {
+    font-size: 16px;
+}
+
+.author {
+    display: flex;
+}
+
+.author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.author h3 {
+    text-align: left;
+    font-size: 12px;
+    margin: 0;
+}
+
+.author h4 {
+    margin: 0;
+    font-size: 12px;
 }
 
 
@@ -132,8 +224,20 @@ button {
 
 footer {
     background-color: var(--very-dark-blue);
+    padding-top: 66px;
+    color: var(--light-grayish-blue);
 }
 
-footer * {
-    color: var(--light-grayish-blue);
+footer img {
+    filter: brightness(0) invert(1);
+}
+
+footer a {
+    color: inherit;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
